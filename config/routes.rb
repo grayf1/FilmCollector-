@@ -16,4 +16,8 @@ Rails.application.routes.draw do
   post "movies" => "movies#create"
   get "actors/:id" => "actors#show"
   get "movies/:id" => "movies#show"
+  get "actors/:id/edit" => "actors#edit"
+  post "actors/:id" => "actors#update"
+  get "actors/:id/delete" => "actors#delete"
+  post "actors/:id" => "actors#destroy"
 end
