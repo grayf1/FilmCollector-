@@ -93,7 +93,7 @@ class ActorsController < ApplicationController
 			# in the request URL 
 			flash[:errors] = actor.errors.full_messages
 			# request the actors/:id/edit URL which will render the actors edit.html.erb
-			redirect_to "actors#{actor.id}/edit"
+			redirect_to "/actors/#{actor.id}/edit"
 		end
 		end	 
 
